@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>390</y>
+      <w>220</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+br.com.projetoescola.dao::CRUD
+--
+--
+~gravar(T obj): String
+~listar(): List&lt;T&gt;
+~listar(T obj): List&lt;T&gt;
+~atualizar(T obj): T
+~apagar(T obj): String
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>40</y>
+      <w>240</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>/br.com.projetoescola.dao::Conexao/
+--
+#conn = null: Connection
+#pst = null: PreparedStatement
+#rs = null: ResultSet
+--
++abrirConexao(): void
++fecharConexao(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>240</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>br.com.projetoescola.dao::CRUDCurso
+--
+--
++gravar(Curso obj): String
++listar(): List&lt;Curso&gt;
++listar(Curso obj): List&lt;Curso&gt;
++atualizar(Curso obj): Curso
++apagar(Curso obj): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>180</y>
+      <w>30</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>90</y>
+      <w>190</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+</diagram>
